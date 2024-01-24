@@ -32,7 +32,6 @@ jobs:
       matrix:
         scenario:
           - default
-          - docker
 
     steps:
       - name: Checkout source
