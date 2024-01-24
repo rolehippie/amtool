@@ -1,0 +1,6 @@
+# Standards: 1.2
+---
+# @var amtool_version_changed:description: Fact to define if the version has changed
+amtool_version_changed: False
+
+...

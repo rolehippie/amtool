@@ -1,0 +1,56 @@
+# Standards: 1.2
+---
+- name: Check existing install
+  register: amtool_version_check
+  failed_when: False
+  changed_when: False
+  check_mode: False
+  shell: "{{ amtool_install_directory }}/amtool --version 2>&1"
+  tags:
+    - amtool
+
+- name: Fact version change
+  when:
+    - amtool_version_check.stdout_lines is defined
+    - amtool_version not in amtool_version_check.stdout_lines[0]
+  set_fact:
+    amtool_version_changed: True
+  tags:
+    - amtool
+
+- name: Download release tarball
+  when:
+    - amtool_version_changed
+  unarchive:
+    src: "{{ amtool_download }}"
+    dest: "{{ amtool_extract_directory }}"
+    remote_src: True
+    owner: "{{ amtool_owner }}"
+    group: "{{ amtool_group }}"
+  tags:
+    - amtool
+
+- name: Copy downloaded binaries
+  when:
+    - amtool_version_changed
+    - not ansible_check_mode
+  loop:
+    - amtool
+  copy:
+    src: "{{ amtool_extract_directory }}/alertmanager-{{ amtool_version }}.linux-amd64/{{ item }}"
+    dest: "{{ amtool_install_directory }}/{{ item }}"
+    remote_src: True
+    owner: "{{ amtool_owner }}"
+    group: "{{ amtool_group }}"
+    mode: u=rwx,g=rx,o=rx
+  tags:
+    - amtool
+
+- name: Remove install directory
+  file:
+    path: "{{ amtool_extract_directory }}/alertmanager-{{ amtool_version }}.linux-amd64"
+    state: absent
+  tags:
+    - amtool
+
+...
