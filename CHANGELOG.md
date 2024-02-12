@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.0](https://github.com/rolehippie/amtool/compare/v1.0.0...v2.0.0) (2024-02-12)
+
+
+### Features
+
+* drop support for ubuntu 18.04 ([b944442](https://github.com/rolehippie/amtool/commit/b9444420b41684e02bf638c41f292aaa573d2323))
+* used full qualified collection names ([d0bc703](https://github.com/rolehippie/amtool/commit/d0bc70394f720e96657ac970e11593cba8044510))
+
 ## 1.0.0 (2024-01-24)
 
 
