@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/rolehippie/amtool/compare/v2.0.0...v2.1.0) (2024-03-18)
+
+
+### Features
+
+* **deps:** update dependency prometheus/alertmanager to v0.27.0 ([ce6a615](https://github.com/rolehippie/amtool/commit/ce6a6151771a2f0b05a45cdee4de8a521c90533a))
+
 ## [2.0.0](https://github.com/rolehippie/amtool/compare/v1.0.0...v2.0.0) (2024-02-12)
 
 
