@@ -1,4 +1,4 @@
-# alertmanager
+# workspace
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/amtool)
 [![General Workflow](https://github.com/rolehippie/amtool/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/amtool/actions/workflows/general.yml)
@@ -44,7 +44,8 @@ URL to the archive of the release to install
 #### Default value
 
 ```YAML
-amtool_download: https://github.com/prometheus/alertmanager/releases/download/v{{
+amtool_download: 
+  https://github.com/prometheus/alertmanager/releases/download/v{{ 
   amtool_version }}/alertmanager-{{ amtool_version }}.linux-amd64.tar.gz
 ```
 
@@ -105,7 +106,6 @@ Fact to define if the version has changed
 ## Discovered Tags
 
 **_amtool_**
-
 
 ## Dependencies
 
