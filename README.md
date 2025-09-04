@@ -103,6 +103,12 @@ amtool_version: 0.28.1
 
 Fact to define if the version has changed
 
+#### Default value
+
+```YAML
+amtool_version_changed: false
+```
+
 ## Discovered Tags
 
 **_amtool_**
