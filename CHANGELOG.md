@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/rolehippie/amtool/compare/v2.2.1...v2.3.0) (2025-09-29)
+
+
+### Features
+
+* apply new repo structure and update linting and integrate noble ([8b85787](https://github.com/rolehippie/amtool/commit/8b857873d0ca93ef799661d8e5ec95ca9e6730dc))
+
 ## [2.2.1](https://github.com/rolehippie/amtool/compare/v2.2.0...v2.2.1) (2025-03-10)
 
 
