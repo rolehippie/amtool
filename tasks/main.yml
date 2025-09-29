@@ -1,9 +1,9 @@
 ---
 - name: Check existing install
   register: amtool_version_check
-  failed_when: False
-  changed_when: False
-  check_mode: False
+  failed_when: false
+  changed_when: false
+  check_mode: false
   ansible.builtin.shell: "{{ amtool_install_directory }}/amtool --version 2>&1"
   tags:
     - amtool
@@ -13,7 +13,7 @@
     - amtool_version_check.stdout_lines is defined
     - amtool_version not in amtool_version_check.stdout_lines[0]
   ansible.builtin.set_fact:
-    amtool_version_changed: True
+    amtool_version_changed: true
   tags:
     - amtool
 
@@ -23,7 +23,7 @@
   ansible.builtin.unarchive:
     src: "{{ amtool_download }}"
     dest: "{{ amtool_extract_directory }}"
-    remote_src: True
+    remote_src: true
     owner: "{{ amtool_owner }}"
     group: "{{ amtool_group }}"
   tags:
@@ -36,9 +36,9 @@
   loop:
     - amtool
   ansible.builtin.copy:
-    src: "{{ amtool_extract_directory }}/alertmanager-{{ amtool_version }}.linux-amd64/{{ item }}"
+    src: "{{ amtool_extract_directory }}/alertmanager-{{ amtool_version }}.linux-{{ amtool_arch }}/{{ item }}"
     dest: "{{ amtool_install_directory }}/{{ item }}"
-    remote_src: True
+    remote_src: true
     owner: "{{ amtool_owner }}"
     group: "{{ amtool_group }}"
     mode: u=rwx,g=rx,o=rx
@@ -47,7 +47,7 @@
 
 - name: Remove install directory
   ansible.builtin.file:
-    path: "{{ amtool_extract_directory }}/alertmanager-{{ amtool_version }}.linux-amd64"
+    path: "{{ amtool_extract_directory }}/alertmanager-{{ amtool_version }}.linux-{{ amtool_arch }}"
     state: absent
   tags:
     - amtool

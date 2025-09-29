@@ -1,5 +1,5 @@
 ---
 # @var amtool_version_changed:description: Fact to define if the version has changed
-amtool_version_changed: False
+amtool_version_changed: false
 
 ...

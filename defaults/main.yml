@@ -3,8 +3,11 @@
 # renovate: datasource=github-releases depName=prometheus/alertmanager
 amtool_version: 0.28.1
 
+# @var amtool_arch:description: Target system architecture of the binary
+amtool_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture == 'arm64' else 'amd64' }}"
+
 # @var amtool_download:description: URL to the archive of the release to install
-amtool_download: "https://github.com/prometheus/alertmanager/releases/download/v{{ amtool_version }}/alertmanager-{{ amtool_version }}.linux-amd64.tar.gz"
+amtool_download: "https://github.com/prometheus/alertmanager/releases/download/v{{ amtool_version }}/alertmanager-{{ amtool_version }}.linux-{{ amtool_arch }}.tar.gz"
 
 # @var amtool_install_directory:description: Directory in which to install the binary
 amtool_install_directory: "/usr/bin"
