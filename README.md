@@ -109,7 +109,7 @@ Version of the release to install
 #### Default value
 
 ```YAML
-amtool_version: 0.28.1
+amtool_version: 0.29.0
 ```
 
 ### amtool_version_changed
