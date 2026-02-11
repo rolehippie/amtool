@@ -1,7 +1,7 @@
 ---
 # @var amtool_version:description: Version of the release to install
 # renovate: datasource=github-releases depName=prometheus/alertmanager
-amtool_version: 0.31.0
+amtool_version: 0.31.1
 
 # @var amtool_arch:description: Target system architecture of the binary
 amtool_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture == 'arm64' else 'amd64' }}"
