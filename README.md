@@ -24,7 +24,6 @@ Building and improving this Ansible role have been sponsored by my current and p
   - [amtool_install_directory](#amtool_install_directory)
   - [amtool_owner](#amtool_owner)
   - [amtool_version](#amtool_version)
-  - [amtool_version_changed](#amtool_version_changed)
 - [Discovered Tags](#discovered-tags)
 - [Dependencies](#dependencies)
 - [License](#license)
@@ -45,8 +44,7 @@ Target system architecture of the binary
 #### Default value
 
 ```YAML
-amtool_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture
-  == 'arm64' else 'amd64' }}"
+amtool_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' or ansible_architecture == 'arm64' else 'amd64' }}"
 ```
 
 ### amtool_download
@@ -56,10 +54,7 @@ URL to the archive of the release to install
 #### Default value
 
 ```YAML
-amtool_download: 
-  https://github.com/prometheus/alertmanager/releases/download/v{{ 
-  amtool_version }}/alertmanager-{{ amtool_version }}.linux-{{ amtool_arch 
-  }}.tar.gz
+amtool_download: https://github.com/prometheus/alertmanager/releases/download/v{{ amtool_version }}/alertmanager-{{ amtool_version }}.linux-{{ amtool_arch }}.tar.gz
 ```
 
 ### amtool_extract_directory
@@ -109,17 +104,7 @@ Version of the release to install
 #### Default value
 
 ```YAML
-amtool_version: 0.31.1
-```
-
-### amtool_version_changed
-
-Fact to define if the version has changed
-
-#### Default value
-
-```YAML
-amtool_version_changed: false
+amtool_version: 0.32.0
 ```
 
 ## Discovered Tags
