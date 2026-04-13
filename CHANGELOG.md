@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.7.0](https://github.com/rolehippie/amtool/compare/v2.6.1...v2.7.0) (2026-04-13)
+
+### Dependencies
+
+* **minor:** update dependency prometheus/alertmanager to v0.32.0 ([#47](https://github.com/rolehippie/amtool/issues/47)) ([6df9f30](https://github.com/rolehippie/amtool/commit/6df9f30e6266514a0176206aa852cc6deeaade2b))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([69bc27a](https://github.com/rolehippie/amtool/commit/69bc27a9315082d69ec7228f2b860fe2040d5f81))
+* **flake:** updated lockfile [skip ci] ([a84f922](https://github.com/rolehippie/amtool/commit/a84f9227618f8c66bf03801f6ac2ecb5327e5ca5))
+* **flake:** updated lockfile [skip ci] ([a2d82b8](https://github.com/rolehippie/amtool/commit/a2d82b8bf5aaae8b466ad799234d090bba6d597e))
+* **flake:** updated lockfile [skip ci] ([1cc2f19](https://github.com/rolehippie/amtool/commit/1cc2f196ee80ed88d28205441dfc7e1ab4dc82d7))
+* **flake:** updated lockfile [skip ci] ([72e8396](https://github.com/rolehippie/amtool/commit/72e839627fa9decdb837a88866d95799628276c3))
+* **flake:** updated lockfile [skip ci] ([ccb1620](https://github.com/rolehippie/amtool/commit/ccb16206b6912aeab555f76a45262c1cb3594740))
+* **flake:** updated lockfile [skip ci] ([c065b5e](https://github.com/rolehippie/amtool/commit/c065b5ebc78529f2b71495c5b7ea1a99e052c6fa))
+* **flake:** updated lockfile [skip ci] ([733e4e6](https://github.com/rolehippie/amtool/commit/733e4e600a5e089a86e3c0093d9e5267d44ad519))
+
 ## [2.6.1](https://github.com/rolehippie/amtool/compare/v2.6.0...v2.6.1) (2026-02-16)
 
 ### Dependencies
