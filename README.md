@@ -104,7 +104,7 @@ Version of the release to install
 #### Default value
 
 ```YAML
-amtool_version: 0.32.1
+amtool_version: 0.32.2
 ```
 
 ## Discovered Tags
