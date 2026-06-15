@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.8.0](https://github.com/rolehippie/amtool/compare/v2.7.2...v2.8.0) (2026-06-15)
+
+### Dependencies
+
+* **minor:** update version prefix to v0.33.0 ([#51](https://github.com/rolehippie/amtool/issues/51)) ([746fe37](https://github.com/rolehippie/amtool/commit/746fe37f63b9d8221c693b72ee902c71bd96c06f))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([aefd641](https://github.com/rolehippie/amtool/commit/aefd641d2300183ae26ec65f716c4820e0dd6e84))
+
 ## [2.7.2](https://github.com/rolehippie/amtool/compare/v2.7.1...v2.7.2) (2026-06-08)
 
 ### Dependencies
