@@ -1,5 +1,7 @@
 # Changelog
 
+## [2.8.1](https://github.com/rolehippie/amtool/compare/v2.8.0...v2.8.1) (2026-07-06)
+
 ## [2.8.0](https://github.com/rolehippie/amtool/compare/v2.7.2...v2.8.0) (2026-06-15)
 
 ### Dependencies
