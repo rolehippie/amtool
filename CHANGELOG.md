@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.11.0](https://github.com/rolehippie/amtool/compare/v2.10.0...v2.11.0) (2026-08-17)
+
+### Dependencies
+
+* **minor:** update dependency pipx:ansible-lint to v26.8.0 ([#61](https://github.com/rolehippie/amtool/issues/61)) ([4ae124b](https://github.com/rolehippie/amtool/commit/4ae124b73f7d0d3902297d903361ed83bd44823d))
+* **minor:** update dependency pipx:molecule to v26.8.0 ([#62](https://github.com/rolehippie/amtool/issues/62)) ([190ffa0](https://github.com/rolehippie/amtool/commit/190ffa04636b9b980b8b05cbf3b286d437f15bf8))
+* **minor:** update dependency prometheus/alertmanager to v0.34.0 ([#63](https://github.com/rolehippie/amtool/issues/63)) ([fb0cc91](https://github.com/rolehippie/amtool/commit/fb0cc91ffffbc48aa65f19cda1f61faeccf7a62a))
+* **patch:** update dependency pipx:ansible-core to v2.21.3 ([#59](https://github.com/rolehippie/amtool/issues/59)) ([11a256e](https://github.com/rolehippie/amtool/commit/11a256ee72dd917bed07e7ce3c06fb6ae85e9c90))
+* **patch:** update dependency pre-commit to v4.6.2 ([#60](https://github.com/rolehippie/amtool/issues/60)) ([831d142](https://github.com/rolehippie/amtool/commit/831d142fbf9ce150c2e767eaae0f7a94d614b325))
+
 ## [2.10.0](https://github.com/rolehippie/amtool/compare/v2.9.0...v2.10.0) (2026-08-10)
 
 ### Dependencies
