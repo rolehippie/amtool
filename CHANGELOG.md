@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.12.0](https://github.com/rolehippie/amtool/compare/v2.11.1...v2.12.0) (2026-09-07)
+
+### Features
+
+* add separate requirements for molecule run ([71f5e8e](https://github.com/rolehippie/amtool/commit/71f5e8e3fc87c9a1355ac665be0073026cdbe68f))
+* use new required facts as attributes ([865ff65](https://github.com/rolehippie/amtool/commit/865ff650f022ddaf4fc17bb6b5da6d65d15a7262))
+
 ## [2.11.1](https://github.com/rolehippie/amtool/compare/v2.11.0...v2.11.1) (2026-08-31)
 
 ### Dependencies
