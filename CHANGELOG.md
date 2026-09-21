@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.12.1](https://github.com/rolehippie/amtool/compare/v2.12.0...v2.12.1) (2026-09-21)
+
+### Dependencies
+
+* **mise:** update dependency pipx:ansible-core to v2.21.4 ([#65](https://github.com/rolehippie/amtool/issues/65)) ([167e034](https://github.com/rolehippie/amtool/commit/167e03464eecae59181c6e27cf34ef1bea88bc65))
+* **mise:** update dependency pipx:ansible-doctor to v8.4.2 ([#67](https://github.com/rolehippie/amtool/issues/67)) ([5ef3435](https://github.com/rolehippie/amtool/commit/5ef34358eb29fd73ebbf918964568885943c06eb))
+* **mise:** update dependency prek to v0.5.3 ([#66](https://github.com/rolehippie/amtool/issues/66)) ([443b349](https://github.com/rolehippie/amtool/commit/443b349c25a592a09e9242f403c084cdc72af1bb))
+* **patch:** update dependency prometheus/alertmanager to v0.34.1 ([#68](https://github.com/rolehippie/amtool/issues/68)) ([be355ee](https://github.com/rolehippie/amtool/commit/be355eecc4ebe214acfa1c8317980131a37ad8d7))
+
 ## [2.12.0](https://github.com/rolehippie/amtool/compare/v2.11.1...v2.12.0) (2026-09-07)
 
 ### Features
